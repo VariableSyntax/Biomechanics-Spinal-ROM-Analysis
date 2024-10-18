@@ -1,6 +1,6 @@
 function varargout = main(varargin)
-% Written by Mattan Orbach (Research Engineer Co-op, Spring/Summer 2021)
-% 06/02/2021
+% Written by Josh McGuckin (Associate Research Engineer,Spring/Summer 2021)
+% 06/02/2022
 
 % MAIN MATLAB code for main.fig
 %      MAIN, by itself, creates a new MAIN or raises the existing
@@ -279,7 +279,7 @@ try
                     plotTitle = strrep(plotTitle, '_', ' '); % remove underscores from title as they make proceeding letters subscripts
                     title(plotTitle)
                     xlabel('Data Point')
-                    ylabel('Relative Angle (°)')
+                    ylabel('Relative Angle (Â°)')
 
                     % ALLOW USER TO ZOOM
                     buttonwait = 0;
@@ -345,7 +345,7 @@ try
                     plotTitle = strrep(plotTitle, '_', ' '); % remove underscores from title as they make proceeding letters subscripts
                     title(plotTitle)
                     xlabel('Data Point')
-                    ylabel('Relative Angle (°)')
+                    ylabel('Relative Angle (Â°)')
                     hold on
                     plot([minDegloc maxDegloc],[minDeg maxDeg],'*r','MarkerSize',8)
                     hold off
